@@ -1,0 +1,16 @@
+{
+  "name": "make-node-app",
+  "version": "0.1.1",
+  "description": "Set up a modern Node.js app by running one command",
+  "license": "MIT",
+  "author": "Evan Wild",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/evanwild/make-node-app.git"
+  },
+  "type": "module",
+  "bin": "index.js",
+  "dependencies": {
+    "@inquirer/prompts": "^3.0.0"
+  }
+}
