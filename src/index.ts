@@ -13,8 +13,10 @@ const projectDir = await input({
 const absolutePath = resolve(projectDir);
 console.log(`\nScaffolding project in ${absolutePath}...\n`);
 
-const moduleDir = fileURLToPath(dirname(import.meta.url));
-await cp(`${moduleDir}/templates/vanilla-ts/`, projectDir, { recursive: true });
+const srcDir = fileURLToPath(dirname(import.meta.url));
+await cp(`${srcDir}/../templates/vanilla-ts/`, projectDir, {
+  recursive: true,
+});
 
 // From https://github.com/vitejs/vite/tree/main/packages/create-vite
 const packageName = projectDir
