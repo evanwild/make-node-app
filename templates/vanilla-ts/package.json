@@ -4,9 +4,11 @@
   "version": "0.1.0",
   "type": "module",
   "scripts": {
-    "start": "tsc && node dist/main.js"
+    "dev": "tsx watch ./src/main.ts",
+    "build": "tsc"
   },
   "devDependencies": {
+    "tsx": "^3.12.7",
     "typescript": "^5.1.6"
   },
   "dependencies": {

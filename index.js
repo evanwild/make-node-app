@@ -39,4 +39,4 @@ await writeFile(`${projectDir}/package.json`, newContents);
 console.log('Done. Now run:\n');
 console.log(`  cd ${projectDir}`);
 console.log(`  npm install`);
-console.log(`  npm run start\n`);
+console.log(`  npm run dev\n`);
