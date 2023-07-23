@@ -1,0 +1,15 @@
+{
+  "name": "vanilla-ts",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "scripts": {
+    "start": "tsc && node dist/main.js"
+  },
+  "devDependencies": {
+    "typescript": "^5.1.6"
+  },
+  "dependencies": {
+    "@types/node": "^20.4.4"
+  }
+}
