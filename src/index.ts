@@ -2,7 +2,7 @@
 
 import { input } from '@inquirer/prompts';
 import { dirname, resolve } from 'node:path';
-import { cp, readFile, writeFile } from 'node:fs/promises';
+import { cp, readFile, writeFile, rename } from 'node:fs/promises';
 import { fileURLToPath } from 'node:url';
 
 const projectDir = await input({
@@ -17,6 +17,10 @@ const srcDir = fileURLToPath(dirname(import.meta.url));
 await cp(`${srcDir}/../templates/vanilla-ts/`, projectDir, {
   recursive: true,
 });
+
+// Can't just have .gitignore in template because of bug with npm publish
+// See https://github.com/npm/npm/issues/3763
+await rename(`${projectDir}/gitignore`, `${projectDir}/.gitignore`);
 
 // From https://github.com/vitejs/vite/tree/main/packages/create-vite
 const packageName = projectDir
