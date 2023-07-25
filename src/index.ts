@@ -1,5 +1,3 @@
-#!/usr/bin/env node
-
 import { input } from '@inquirer/prompts';
 import { dirname, resolve } from 'node:path';
 import { cp, readFile, writeFile, rename } from 'node:fs/promises';

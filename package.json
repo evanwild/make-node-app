@@ -1,6 +1,6 @@
 {
   "name": "make-node-app",
-  "version": "0.3.0",
+  "version": "0.3.1",
   "description": "Set up a modern Node.js app by running one command",
   "license": "MIT",
   "author": "Evan Wild",
@@ -8,10 +8,10 @@
     "type": "git",
     "url": "https://github.com/evanwild/make-node-app.git"
   },
-  "bin": "./dist/index.js",
+  "bin": "index.js",
   "type": "module",
   "scripts": {
-    "build": "tsc && chmod +x ./dist/index.js",
+    "build": "tsc",
     "prepare": "npm run build"
   },
   "devDependencies": {
