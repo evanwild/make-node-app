@@ -8,10 +8,10 @@
     "build": "tsc"
   },
   "devDependencies": {
-    "tsx": "^3.12.7",
-    "typescript": "^5.1.6"
+    "tsx": "^3.14.0",
+    "typescript": "^5.2.2"
   },
   "dependencies": {
-    "@types/node": "^20.4.4"
+    "@types/node": "^20.8.9"
   }
 }

@@ -4,9 +4,10 @@ Don't spend any more time configuring new Node.js projects!
 
 ### Features
 
+- Single command to make a new project
 - Modern preconfigured `tsconfig.json`
-- Fast live reloading for development
-- Simple `package.json` and `.gitignore`
+- Fast development mode which reruns on changes
+- Concise `package.json` and `.gitignore`
 
 ## Usage
 
