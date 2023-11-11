@@ -1,6 +1,6 @@
 {
   "name": "make-node-app",
-  "version": "0.3.2",
+  "version": "0.3.3",
   "description": "Set up a modern Node.js app by running one command",
   "license": "MIT",
   "author": "Evan Wild",
@@ -11,6 +11,6 @@
   "bin": "index.js",
   "type": "module",
   "dependencies": {
-    "@inquirer/prompts": "^3.2.0"
+    "@inquirer/prompts": "^3.3.0"
   }
 }
